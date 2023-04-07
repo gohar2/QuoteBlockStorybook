@@ -1,0 +1,85 @@
+.quoteBlock {
+  width: 90%;
+  display: flex;
+  color: #282828 !important;
+  padding: 1rem;
+  box-sizing: border-box;
+  align-items: start;
+  box-shadow: 1px -1px 41px 22px rgba(181, 181, 181, 0.2);
+  -webkit-box-shadow: 1px -1px 41px 22px rgba(181, 181, 181, 0.2);
+  -moz-box-shadow: 1px -1px 41px 22px rgba(181, 181, 181, 0.2);
+  margin: 0 auto;
+}
+
+.headingSection {
+  width: 30%;
+}
+
+.contentSection {
+  width: 70%;
+}
+
+.headingSection p {
+  margin-top: 0;
+  font-size: 12px;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.contentSection button {
+  padding: 10px;
+}
+
+.headingSection h2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+  width: fit-content;
+}
+
+.headingSectionUnderline {
+  border-bottom: 1px solid black;
+  width: 40%;
+  display: block;
+}
+
+.contentSection p {
+  font-size: 12px;
+  margin-top: 0;
+  width: fit-content;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.title.underline {
+  text-decoration: underline;
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .quoteBlock {
+    flex-direction: column;
+  }
+
+  .headingSection,
+  .contentSection {
+    width: 100%;
+  }
+
+  .headingSectionUnderline {
+    margin: 15px 0;
+  }
+}

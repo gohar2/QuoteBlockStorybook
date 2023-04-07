@@ -2,15 +2,26 @@ import React from 'react';
 
 const themes = {
   brandA: {
-    background: '#0000FF',
+    containerBackground: '#ffffff',
     fontFamily: 'Arial, sans-serif',
-    cta: { background: '#D2B99B', color: '#FFFFFF' },
+    texBoxBackground: '#ffffff',
+    textColor: '#282828',
+    ctaColor: '#D2B99B',
+    ctaTextColor: '#ffffff'
+
   },
   brandB: {
-    background: '#FF0000',
-    fontFamily: 'Times New Roman, serif',
-    cta: { background: '#0057B7', color: '#FFFFFF' },
+    containerBackground: '#F6F6F6',
+    fontFamily: 'Arial, sans-serif',
+    texBoxBackground: '#ffffff',
+    textColor: '#0057B7  ',
+    ctaColor: '#0057B7',
+    ctaTextColor: '#ffffff'
+
   },
 };
 
-export const ThemeContext = React.createContext(themes.brandA);
+export const ThemeContextBrandA = React.createContext(themes.brandA);
+export const ThemeContextBrandB = React.createContext(themes.brandB);
+
+
